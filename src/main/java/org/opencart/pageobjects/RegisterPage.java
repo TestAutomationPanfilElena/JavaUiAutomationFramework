@@ -37,7 +37,7 @@ public class RegisterPage extends Page {
 
 
     }
-    public void switchOnThePrivacyToggle(){
+    public void switchOnThePrivacyToggle(WebDriver driver){
         privacyToggle.click();
     }
 
