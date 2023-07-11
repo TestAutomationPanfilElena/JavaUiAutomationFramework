@@ -45,7 +45,7 @@ public class RegistrationFlowTestSuite {
         registerPage.fillInTheRegisterForm(firstName, lastName, email, password);
         registerPage.switchOnThePrivacyToggle(driver);
         registerPage.clickOnContinueButton();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         System.out.println(driver.getCurrentUrl());
 
         boolean urlContainsTheCorrectKeyWords = driver.getCurrentUrl().contains("success");
@@ -73,7 +73,7 @@ public class RegistrationFlowTestSuite {
 
         String email = DataFakerManager.getRandomEmail();
 
-        String password = DataFakerManager.getRandomPassword(14, 20);
+        String password = DataFakerManager.getRandomPassword(5, 20);
 
         registerPage.fillInTheRegisterForm(firstName, lastName, email, password);
         // Do not enable privacy toggle
