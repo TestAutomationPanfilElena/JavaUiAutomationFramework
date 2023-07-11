@@ -9,16 +9,17 @@ public class AccountCreatePage {
     public class AccountCreatedPage extends Page {
         public AccountCreatedPage(WebDriver driver) {
             super(driver);
+
         }
 
-        private WebElement logoutOption;
         @FindBy(xpath = "//a[normalize-space()='Logout']")
         private WebElement logOutOption;
 
-        public void logoutFromTheAccount() {
+        public void logOutFromTheAccount() {
             accountIcon.click();
             logOutOption.click();
-            System.out.println("The user is logged out:");
+            System.out.println("The user is logged out");
+
         }
     }
 }
